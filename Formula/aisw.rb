@@ -1,10 +1,10 @@
-# Homebrew formula template. release.sh fills in 1.1.1 and 7aa68eb14bac87c90c4dda072e71c4cc09b6d79b600d5aa900a7502dcf48f981 and writes it to the tap
+# Homebrew formula template. release.sh fills in 1.1.2 and 4e28fadfa4c9f16d3b973256dce60398954b4366e4733ef6e6c119df229e6661 and writes it to the tap
 # github.com/mbshin/homebrew-tools (Formula/aisw.rb).
 class Aisw < Formula
   desc "Keep coding when an AI agent hits its usage limit: next Claude account, then Codex"
   homepage "https://github.com/mbshin/aisw"
-  url "https://github.com/mbshin/aisw/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "7aa68eb14bac87c90c4dda072e71c4cc09b6d79b600d5aa900a7502dcf48f981"
+  url "https://github.com/mbshin/aisw/archive/refs/tags/v1.1.2.tar.gz"
+  sha256 "4e28fadfa4c9f16d3b973256dce60398954b4366e4733ef6e6c119df229e6661"
   license "MIT"
 
   depends_on "fzf" # aisw resume
@@ -15,8 +15,6 @@ class Aisw < Formula
     libexec.install "aisw", "common.sh", "on-limit.sh", "statusline.sh", "signin-browser.sh", "ui.py", "admin.sh", "codex.sh"
     # An exec script, not a symlink, so `dirname "$0"` in aisw still finds common.sh.
     bin.write_exec_script libexec/"aisw"
-    # Old name (until 1.0.x), kept so existing aliases and habits keep working.
-    bin.install_symlink "aisw" => "clsw"
   end
 
   def caveats
@@ -31,6 +29,5 @@ class Aisw < Formula
 
   test do
     assert_match "A: free", shell_output("#{bin}/aisw status")
-    assert_match "A: free", shell_output("#{bin}/clsw status")
   end
 end
