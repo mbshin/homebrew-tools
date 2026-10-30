@@ -1,10 +1,10 @@
-# Homebrew formula template. release.sh fills in 1.1.2 and 4e28fadfa4c9f16d3b973256dce60398954b4366e4733ef6e6c119df229e6661 and writes it to the tap
+# Homebrew formula template. release.sh fills in 1.2.0 and 5708ee83e8eb7c10b1d01c5408de49ae822a1bbe2df8952254035c011eba1b41 and writes it to the tap
 # github.com/mbshin/homebrew-tools (Formula/aisw.rb).
 class Aisw < Formula
   desc "Keep coding when an AI agent hits its usage limit: next Claude account, then Codex"
   homepage "https://github.com/mbshin/aisw"
-  url "https://github.com/mbshin/aisw/archive/refs/tags/v1.1.2.tar.gz"
-  sha256 "4e28fadfa4c9f16d3b973256dce60398954b4366e4733ef6e6c119df229e6661"
+  url "https://github.com/mbshin/aisw/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "5708ee83e8eb7c10b1d01c5408de49ae822a1bbe2df8952254035c011eba1b41"
   license "MIT"
 
   depends_on "fzf" # aisw resume
@@ -23,7 +23,7 @@ class Aisw < Formula
         aisw setup
         aisw login
       Optional, to keep typing `claude`:
-        echo 'alias claude=aisw' >> ~/.zshrc
+        echo "alias claude='aisw claude'" >> ~/.zshrc
     EOS
   end
 
