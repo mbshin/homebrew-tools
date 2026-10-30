@@ -1,10 +1,10 @@
-# Homebrew formula template. release.sh fills in 1.4.0 and 0e1b83be86df0d1c181b25a3f1ef42ff6717f3f3a2d189247f694c207c27a1fc and writes it to the tap
+# Homebrew formula template. release.sh fills in 1.4.1 and a2352fcab051b3678b2edcffd1c212d4a92a4c63abf82ae80dd67129e9e8419b and writes it to the tap
 # github.com/mbshin/homebrew-tools (Formula/aisw.rb).
 class Aisw < Formula
   desc "Keep coding when an AI agent hits its usage limit: next Claude account, then Codex"
   homepage "https://github.com/mbshin/aisw"
-  url "https://github.com/mbshin/aisw/archive/refs/tags/v1.4.0.tar.gz"
-  sha256 "0e1b83be86df0d1c181b25a3f1ef42ff6717f3f3a2d189247f694c207c27a1fc"
+  url "https://github.com/mbshin/aisw/archive/refs/tags/v1.4.1.tar.gz"
+  sha256 "a2352fcab051b3678b2edcffd1c212d4a92a4c63abf82ae80dd67129e9e8419b"
   license "MIT"
 
   depends_on "fzf" # aisw resume
