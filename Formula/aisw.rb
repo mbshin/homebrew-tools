@@ -1,10 +1,10 @@
-# Homebrew formula template. release.sh fills in 1.3.1 and 4e66f62bffe64924f55f6c324908a08ea79caa0fe6785bdd2e1763d190e4329b and writes it to the tap
+# Homebrew formula template. release.sh fills in 1.4.0 and 0e1b83be86df0d1c181b25a3f1ef42ff6717f3f3a2d189247f694c207c27a1fc and writes it to the tap
 # github.com/mbshin/homebrew-tools (Formula/aisw.rb).
 class Aisw < Formula
   desc "Keep coding when an AI agent hits its usage limit: next Claude account, then Codex"
   homepage "https://github.com/mbshin/aisw"
-  url "https://github.com/mbshin/aisw/archive/refs/tags/v1.3.1.tar.gz"
-  sha256 "4e66f62bffe64924f55f6c324908a08ea79caa0fe6785bdd2e1763d190e4329b"
+  url "https://github.com/mbshin/aisw/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "0e1b83be86df0d1c181b25a3f1ef42ff6717f3f3a2d189247f694c207c27a1fc"
   license "MIT"
 
   depends_on "fzf" # aisw resume
@@ -12,7 +12,7 @@ class Aisw < Formula
   depends_on "uv" # runs ui.py; Textual is fetched into uv's cache on the first `aisw ui`
 
   def install
-    libexec.install "aisw", "common.sh", "on-limit.sh", "statusline.sh", "signin-browser.sh", "ui.py", "admin.sh", "codex.sh"
+    libexec.install "aisw", "common.sh", "on-limit.sh", "statusline.sh", "signin-browser.sh", "ui.py", "admin.sh", "fallback.sh"
     # An exec script, not a symlink, so `dirname "$0"` in aisw still finds common.sh.
     bin.write_exec_script libexec/"aisw"
   end
