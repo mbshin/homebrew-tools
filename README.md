@@ -4,8 +4,8 @@ Homebrew tap.
 
 | Formula | What |
 |---|---|
-| [clsw](https://github.com/mbshin/clsw) | Keep Claude Code going on your next account when one hits its usage limit |
+| [aisw](https://github.com/mbshin/aisw) | Keep coding when an AI agent hits its usage limit: next Claude account, then Codex (was clsw) |
 
 ```zsh
-brew install mbshin/tools/clsw
+brew install mbshin/tools/aisw
 ```
