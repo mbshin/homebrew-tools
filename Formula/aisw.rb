@@ -1,10 +1,10 @@
-# Homebrew formula template. release.sh fills in 2.0.1 and 25a691cb894943457e1ed495a5d70a7935c3fff1189388e6f628fa9f56a5823d and writes it to the tap
+# Homebrew formula template. release.sh fills in 2.0.2 and b564680d81add2b5656b94b573cf40d8919b5de5562d82e815696488ee0a8b5e and writes it to the tap
 # github.com/mbshin/homebrew-tools (Formula/aisw.rb).
 class Aisw < Formula
   desc "One list of AI accounts (Claude Code, Codex, Antigravity): pick one, start it"
   homepage "https://github.com/mbshin/aisw"
-  url "https://github.com/mbshin/aisw/archive/refs/tags/v2.0.1.tar.gz"
-  sha256 "25a691cb894943457e1ed495a5d70a7935c3fff1189388e6f628fa9f56a5823d"
+  url "https://github.com/mbshin/aisw/archive/refs/tags/v2.0.2.tar.gz"
+  sha256 "b564680d81add2b5656b94b573cf40d8919b5de5562d82e815696488ee0a8b5e"
   license "MIT"
 
   depends_on "jq"
