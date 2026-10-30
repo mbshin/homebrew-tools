@@ -1,10 +1,10 @@
-# Homebrew formula template. release.sh fills in 1.0.0 and 0bfbfc54fc4d134adba73f56dcdf939d33d8b1fa3167a7b783602934ede767f2 and writes it to the tap
+# Homebrew formula template. release.sh fills in 1.0.1 and 8a161fcc62c53b25f8ec4668bf0acf334786640c65c754adb4b3128ebf54a90a and writes it to the tap
 # github.com/mbshin/homebrew-tools (Formula/clsw.rb).
 class Clsw < Formula
   desc "Keep Claude Code going on your next account when one hits its usage limit"
   homepage "https://github.com/mbshin/clsw"
-  url "https://github.com/mbshin/clsw/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "0bfbfc54fc4d134adba73f56dcdf939d33d8b1fa3167a7b783602934ede767f2"
+  url "https://github.com/mbshin/clsw/archive/refs/tags/v1.0.1.tar.gz"
+  sha256 "8a161fcc62c53b25f8ec4668bf0acf334786640c65c754adb4b3128ebf54a90a"
   license "MIT"
 
   depends_on "fzf" # clsw resume
